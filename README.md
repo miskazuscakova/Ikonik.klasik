@@ -1,6 +1,6 @@
 # Ikonik Klasik
 
-Vitajte na mojom blogu o filmoch a seriáloch. Sledujte naše recenzie a odporúčania.
+Vitajte na mojom blogu o filmoch a seriáloch. Sleduj moje recenzie a odporúčania.
 
 ## Obsah
 
