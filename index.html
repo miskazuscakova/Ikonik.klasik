@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikonik Klasik - Blog o filmoch a seriáloch</title>
+    <meta name="description" content="Blog o filmoch a seriáloch. Sledujte naše recenzie a odporúčania.">
+    <meta name="keywords" content="filmy, seriály, recenzie, blog, Ikonik Klasik">
+    <meta name="author" content="Ikonik Klasik">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1f1f1f;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 200px;
+        }
+        nav {
+            background-color: #2c2c2c;
+            padding: 10px;
+            text-align: center.
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none.
+        }
+        main {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        article {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        article h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #1f1f1f;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        a {
+            color: #BB86FC;
+            text-decoration: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column.
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #BB86FC;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer.
+        }
+        section {
+            margin-bottom: 40px.
+        }
+        @media (max-width: 600px) {
+            header img {
+                max-width: 150px;
+            }
+            nav {
+                font-size: 14px.
+            }
+            .contact-form input, .contact-form textarea {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="data:image/png;base64,<?= base64_encode(file_get_contents('/mnt/data/1.png')) ?>" alt="Ikonik Klasik logo">
+    </header>
+    <nav>
+        <a href="#">Domov</a>
+        <a href="#">Blog</a>
+        <a href="#">O mne</a>
+        <a href="#">Kontakt</a>
+    </nav>
+    <main>
+        <section>
+            <h2>O mne</h2>
+            <p>Ahoj! Som nadšenec filmov a seriálov a toto je môj priestor na zdieľanie mojich myšlienok a recenzií. Sledujte ma aj na Instagrame: @ikonikklasik.</p>
+        </section>
+        <section>
+            <h2>Kontakt</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Tvoje meno" required>
+                <input type="email" placeholder="Tvoj email" required>
+                <textarea placeholder="Tvoja správa" required></textarea>
+                <button type="submit">Odoslať</button>
+            </form>
+        </section>
+        <section>
+            <article>
+                <h2>Názov článku</h2>
+                <p>Obsah článku...</p>
+                <a href="#">Pokračovanie na Instagrame</a>
+            </article>
+            <!-- Ďalšie články môžu byť pridané sem -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ikonik Klasik. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>
